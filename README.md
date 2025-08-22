@@ -10,4 +10,5 @@ Supports **progress tracking**, **direct file sending**, and **24h expiring down
 Run this one-liner on your VPS:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/YOUR_GITHUB/telegram-video-bot/main/setup.sh | bash
+curl -sL https://raw.githubusercontent.com/benserver24/telegram-video-bot/main/setup.sh | bash
+
