@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Video Bot
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/home/%i/telegram-video-bot
+Environment=PATH=/home/%i/telegram-video-bot/bot_env/bin:/usr/bin
+ExecStart=/home/%i/telegram-video-bot/bot_env/bin/python -m bot.main
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
